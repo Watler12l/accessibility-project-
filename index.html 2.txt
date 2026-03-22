@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== META (ACCESSIBILITY + RESPONSIVE) ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photography Shop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== SKIP LINK (KEYBOARD USERS) ===== -->
+    <!-- Allows users to skip navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>Travel Photography</h1>
+
+        <!-- Navigation with ARIA label -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+
+                <!-- Cart button -->
+                <li>
+                    <a href="#" class="cart" aria-label="Go to checkout page">
+                        🛒 Cart
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main id="main-content">
+
+        <section>
+            <h2>Available Prints</h2>
+
+            <!-- ===== PHOTO 1 ===== -->
+            <article class="photo">
+
+                <!-- Accessible image -->
+                <img src="images/beach.jpg" 
+                     alt="People sitting on white cliffs overlooking a calm blue sea at sunset">
+
+                <h3>Cliffside Sunset</h3>
+
+                <!-- Accessible button -->
+                <button aria-label="Add Cliffside Sunset photo to basket">
+                    Add to Basket
+                </button>
+            </article>
+
+            <!-- ===== PHOTO 2 ===== -->
+            <article class="photo">
+
+                <img src="images/mountain.jpg" 
+                     alt="Large mountain valley with river running through it under cloudy sky">
+
+                <h3>Mountain Valley</h3>
+
+                <button aria-label="Add Mountain Valley photo to basket">
+                    Add to Basket
+                </button>
+            </article>
+
+            <!-- ===== PHOTO 3 ===== -->
+            <article class="photo">
+
+                <img src="images/waterfall.jpg" 
+                     alt="Powerful waterfall flowing into a rocky pool surrounded by greenery">
+
+                <h3>Waterfall</h3>
+
+                <button aria-label="Add Waterfall photo to basket">
+                    Add to Basket
+                </button>
+            </article>
+
+            <!-- ===== PHOTO 4 ===== -->
+            <article class="photo">
+
+                <img src="images/bridge.jpg" 
+                     alt="View looking up at the Golden Gate Bridge structure against blue sky">
+
+                <h3>Golden Gate Bridge</h3>
+
+                <button aria-label="Add Golden Gate Bridge photo to basket">
+                    Add to Basket
+                </button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 Travel Photography</p>
+    </footer>
+
+</body>
+</html>
